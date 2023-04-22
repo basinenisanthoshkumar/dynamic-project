@@ -1,80 +1,65 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
-  background-image: url('https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 60vh;
+  padding: 0;
+  font-family: sans-serif;
 }
-.formbdy {
-  border: px solid;
-  border-radius: 3px;
-  border-collapse: none;
-  margin-top: 10rem;
-  margin-left: 45rem;
-  width: 35rem;
-  height: 40rem;
-  -moz-box-shadow: 0 0 10px rgb(0, 0, 0);
-  -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
-  box-shadow: 0 0 10px rgb(0, 0, 0);
-  background-color: rgb(0, 0, 0);
+
+.bg-image {
+  background-image: url('https://images.unsplash.com/photo-1680484006397-64f3fcd8fc14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+  background-size:cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
-.formbdy h1 {
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  color: rgb(218, 134, 9);
- 
-  font-family: 'Overpass', sans-serif;
-  padding-top: 20px;
-}
-.field {
-  border-radius: 5px;
-  height: 500px;
-  width: 70%;
-  margin-left: 60px;
-  font-size: 1.2rem;
-  background-color: rgb(223, 191, 12);
-  font-weight: 600;
-  padding-top: 20px;
-}
-input {
-  font-size: 2rem;
   
 }
-input[type=submit]{
-  font-size: 1.5rem;
-  font-family: system-ui, sans-serif;
+
+h1 {
+  margin-top: 0;
 }
-.signup-link a {
-  color: black;
+
+input {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  max-width: 200px;
+  font-size: 18px;
 }
-input:hover {
-  background-color: rgba(0, 0, 0, 0.226);
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
 }
+
 button:hover {
-  background-color: rgba(0, 0, 0, 0.226);
+  background-color: #0069d9;
 }
-.forgot-pass a {
-  color: black;
+
+#error-message {
+  color: red;
+  margin-top: 20px;
 }
-.forgot-pass:hover {
-  color: black;
-}
-.signup-link a:hover{
-background-color:rgba(0, 0, 0, 0.226);
-}
-.forgot-pass a:hover{
-  background-color:rgba(0, 0, 0, 0.226);}
-
-
-
-
-
-
-
-
