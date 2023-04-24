@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
   <!-- <script>function fuu(){
       window.open("page1.html")
@@ -9,7 +10,7 @@
   </head>
   <body>
     <div class="bg-image"></div>
-    <div class="login-container">
+    <div class="login-container" >
       <h1>Login</h1>
       <form>
         <input type="text" id="username" placeholder="Username" required>
@@ -26,9 +27,9 @@
    localStorage.setItem("Password",password);
       if (username == "" || password == "") {
         alert("Incorrect username or password");
-      } else if (username != "admin@gmail.com" || password != "admin") {
-        document.getElementById("error-message").innerHTML = "Incorrect username or password";
-      }
+      } //else if (username != "admin@gmail.com" || password != "admin") {
+       // document.getElementById("error-message").innerHTML = "Incorrect username or password";
+     // }
       else { 
         document.getElementById("error-message").innerHTML = "";
         alert("Login successful");
