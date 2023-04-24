@@ -62,3 +62,12 @@ body{
   background-size: cover;
   background-repeat: no-repeat; 
 }
+h1{
+  text-align: center;
+}
+.header{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  float: right;
+  color: #ccc;
+}

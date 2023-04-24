@@ -1,8 +1,4 @@
-
-function fuu(){
-  window.open("page1.html")
-}
-    function validateForm() {
+function validateForm() {
         var name = document.forms["myForm"]["name"].value;
         var dob = document.forms["myForm"]["dob"].value;
         var address = document.forms["myForm"]["address"].value;
@@ -10,5 +6,6 @@ function fuu(){
         var branch = document.forms["myForm"]["branch"].value;
         var year = document.forms["myForm"]["year"].value;
     }
-    
+   
+document.getElementById("header").innerHTML=localStorage.getItem(Userid);
     
