@@ -6,6 +6,8 @@ function validateForm() {
         var branch = document.forms["myForm"]["branch"].value;
         var year = document.forms["myForm"]["year"].value;
     }
-   
-document.getElementById("header").innerHTML=localStorage.getItem(Userid);
+    //var x = localStorage.getItem('Userid');
+    document.getElementById("header").innerHTML=localStorage.getItem('Userid');
+    //console.log(x);
+//document.getElementById("header").innerHTML=localStorage.getItem(Userid);
     

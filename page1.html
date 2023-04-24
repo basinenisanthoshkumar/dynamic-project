@@ -1,68 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Student Registration Form</title>
-  <link rel="stylesheet" href="styles2.css">
-  <script type="module" src="script.js"></script>
-	
-</head>
-<body>
-	<header> 
-		<div class="header">
-	<span id="header"> </span>
-		</div>
-	</header>
-	<form>
-		<h1>ID details form</h1>
-		<label for="name">FirstName:</label>
-		<input type="text" id="name" name="name" required>
+  <head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        User Id:
+        <span id="header"> </span>
+      </div>
+    </header>
+    <form>
+      <h1>ID details form</h1>
+      <label for="name">FirstName:</label>
+      <input type="text" id="name" name="name" required />
 
-    <label for="name">LastName:</label>
-		<input type="text" id="name" name="name" required>
+      <label for="name">LastName:</label>
+      <input type="text" id="name" name="name" required />
 
-    <label for="email">Email id </label>
-    <input type="email" id="email" required name="email">
+      <label for="email">Email id </label>
+      <input type="email" id="email" required name="email" />
 
-    <label for="number">Number:</label>
-    <input type="tel" id="number" name="number" maxlength="10" required>
-    
-    <label for="gender" >Gender</label>
-    <input type="radio" id="gender" name="gender">Male 
-    <input type="radio" id="gender" name="gender">Female
+      <label for="number">Number:</label>
+      <input type="tel" id="number" name="number" maxlength="10" required />
 
-		 <label for="dob">Date of Birth:</label>
-		<input type="date" id="dob" name="dob" required>
+      <label for="gender">Gender</label>
+      <input type="radio" id="gender" name="gender" />Male
+      <input type="radio" id="gender" name="gender" />Female
 
-    <label for="branch">Branch:</label>
-		<select id="branch" name="branch" required>
-			<option value="" disabled selected>Select your branch</option>
-			<option value="CSE">Computer Science and Engineering</option>
-			<option value="IT">Information Technology</option>
-			<option value="ECE">Electronics and Communication Engineering</option>
-			<option value="ME">Mechanical Engineering</option>
-		</select>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
 
-		<label for="year">Year:</label>
-		<select id="year" name="year" required>
-			<option value="" disabled selected>Select your year</option>
-			<option value="1">1st year</option>
-			<option value="2">2nd year</option>
-			<option value="3">3rd year</option>
-			<option value="4">4th year</option>
-		</select>
+      <label for="branch">Branch:</label>
+      <select id="branch" name="branch" required>
+        <option value="" disabled selected>Select your branch</option>
+        <option value="CSE">Computer Science and Engineering</option>
+        <option value="IT">Information Technology</option>
+        <option value="ECE">Electronics and Communication Engineering</option>
+        <option value="ME">Mechanical Engineering</option>
+      </select>
 
-		<label for="address">Address:</label>
-		<input type="textarea" id="address" name="address" rows="3" maxlength="100" required>
+      <label for="year">Year:</label>
+      <select id="year" name="year" required>
+        <option value="" disabled selected>Select your year</option>
+        <option value="1">1st year</option>
+        <option value="2">2nd year</option>
+        <option value="3">3rd year</option>
+        <option value="4">4th year</option>
+      </select>
 
-		<label for="pincode">Pincode:</label>
-		<input type="number" id="pincode" name="pincode" required>
+      <label for="address">Address:</label>
+      <input
+        type="textarea"
+        id="address"
+        name="address"
+        rows="3"
+        maxlength="100"
+        required
+      />
 
-	
-    <label for="submit"></label>
-		<input type="submit" value="Submit">
-    <label for="reset"></label>
-    <input type="reset" id="reset" value="Reset">
+      <label for="pincode">Pincode:</label>
+      <input type="number" id="pincode" name="pincode" required />
 
-	</form>
-</body>
+      <label for="submit"></label>
+      <input type="submit" value="Submit" />
+      <label for="reset"></label>
+      <input type="reset" id="reset" value="Reset" />
+    </form>
+
+  </body>
 </html>

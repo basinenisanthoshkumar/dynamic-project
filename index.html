@@ -22,9 +22,11 @@
       var username = document.getElementById("username").value;
       var password = document.getElementById("password").value;
     
+   localStorage.setItem("Userid",username);
+   localStorage.setItem("Password",password);
       if (username == "" || password == "") {
         alert("Incorrect username or password");
-      } else if (username != "admin" || password != "admin") {
+      } else if (username != "admin@gmail.com" || password != "admin") {
         document.getElementById("error-message").innerHTML = "Incorrect username or password";
       }
       else { 
@@ -32,8 +34,7 @@
         alert("Login successful");
         window.open("page1.html")
       }
-   var x=document.getElementById("username").value;
-   localStorage.setItem("Userid",x);
+
     }</script>
   </body>
 </html>
