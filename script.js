@@ -29,3 +29,10 @@ function validateForm() {
     
     document.getElementById("header").innerHTML=localStorage.getItem('Userid');
     
+    function loginPage() {
+
+          if (!localStorage.getItem('Userid')) {   
+            window.location.href = 'index.html';      
+          }       
+    }
+        window.onload = loginPage;
