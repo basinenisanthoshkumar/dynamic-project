@@ -12,19 +12,21 @@
     <div class="bg-image"></div>
     <div class="login-container" >
       <h1>Login</h1>
-      <form>
+      <form method="POST">
         <input type="text" id="username" placeholder="Username" maxlength="15" required>
         <input type="password" id="password" placeholder="Password"  maxlength="15" required>
         <button type="button" onclick="validateForm()">Login</button>
       </form>
       <p id="error-message"></p>
     </div>
+
+
     <script>function validateForm() {
       var username = document.getElementById("username").value;
-      var password = document.getElementById("password").value;
-    
-   localStorage.setItem("Userid",username);
-   localStorage.setItem("Password",password);
+      var password = document.getElementById("password").value; 
+
+       localStorage.setItem("Userid",username);
+      localStorage.setItem("Password",password);
       if (username == "" || password == "") {
         alert("Incorrect username or password");
       } //else if (username != "admin@gmail.com" || password != "admin") {
@@ -37,5 +39,9 @@
       }
 
     }</script>
+
+
+
+
   </body>
 </html>

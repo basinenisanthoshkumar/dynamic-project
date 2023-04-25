@@ -14,11 +14,11 @@
     </header>
     <form>
       <h1>ID details form</h1>
-      <label for="name">FirstName:</label>
-      <input type="text" id="name" name="name" required />
+      <label for="firstname">FirstName:</label>
+      <input type="text" id="firstname" name="name" required >
 
-      <label for="name">LastName:</label>
-      <input type="text" id="name" name="name" required />
+      <label for="lastname">LastName:</label>
+      <input type="text" id="lastname" name="name" required >
 
       <label for="email">Email id </label>
       <input type="email" id="email" required name="email" />
@@ -62,10 +62,10 @@
       />
 
       <label for="pincode">Pincode:</label>
-      <input type="number" id="pincode" name="pincode" required />
+      <input type="number" id="pincode"  maxlength="6" name="pincode" required />
 
       <label for="submit"></label>
-      <input type="submit" value="Submit" />
+      <input type="submit" onclick="validateForm()" value="Submit" />
       <label for="reset"></label>
       <input type="reset" id="reset" value="Reset" />
     </form>

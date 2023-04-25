@@ -1,13 +1,31 @@
 function validateForm() {
-        var name = document.forms["myForm"]["name"].value;
+        var firstname = document.forms["myForm"]["firstname"].value;
+       localStorage.setItem("FirstName",firstname);
+
+        var lastname = document.forms["myForm"]["lastname"].value;
+       localStorage.setItem("LastName",firstname);
+
+        var Email= document.forms["myForm"]["email"].value;
+        localStorage.setItem("Email",Email);
+
+        var Number = document.forms["myForm"]["number"].value;
+        localStorage.setItem("Number",Number);
+
         var dob = document.forms["myForm"]["dob"].value;
+        localStorage.setItem("Dob",dob);
+
         var address = document.forms["myForm"]["address"].value;
+       localStorage.setItem("Address",address);
+
         var pincode = document.forms["myForm"]["pincode"].value;
+        localStorage.setItem("Pincode",pincode);
+
         var branch = document.forms["myForm"]["branch"].value;
+        localStorage.setItem("Branch",branch);
+
         var year = document.forms["myForm"]["year"].value;
+        localStorage.setItem("Year",year);
     }
-    //var x = localStorage.getItem('Userid');
+    
     document.getElementById("header").innerHTML=localStorage.getItem('Userid');
-    //console.log(x);
-//document.getElementById("header").innerHTML=localStorage.getItem(Userid);
     
