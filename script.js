@@ -40,6 +40,8 @@ function validateForm() {
 function logout() {
      localStorage.removeItem("Userid");
      localStorage.removeItem("Password");
-     window.open("index.html");
+      loginPage();
+
+     //window.open("index.html");
       //window.location.href = "index.html";
 }
