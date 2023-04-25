@@ -43,4 +43,6 @@ function logout() {
   localStorage.removeItem('Userid');
   localStorage.removeItem('Password');
   window.location.href = 'index.html';
+  //window.open("page1.html")
+  //loginPage();
 }
